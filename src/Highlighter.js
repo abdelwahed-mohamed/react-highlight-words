@@ -78,8 +78,8 @@ export default function Highlighter ({
               className={highlightClassNames}
               key={index}
               style={highlightStyles}
+              dangerouslySetInnerHTML={{__html: text}}
             >
-              {text}
             </HighlightTag>
           )
         } else {
